@@ -26,29 +26,26 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-e0306a7417d2ea1af6eb.js"
+    "url": "webpack-runtime-c63a0b0cf1e40cc6319d.js"
   },
   {
-    "url": "app.72db291f218dd800351e.css"
+    "url": "app.45c5d3e0cde5cf74edaa.css"
   },
   {
-    "url": "app-01657074c783c4d1e6d4.js"
+    "url": "app-7fb18d82e6a0447e80e1.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8d11bc7128dad10f2366.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-62d1bd9dc3de204471e4.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0d0c58194669e701bf4bf317db9e682d"
+    "revision": "5e530c3fdd9f1dab07b49991f99f59c4"
   },
   {
-    "url": "0-19f9133149d3d1470992.js"
+    "url": "component---src-pages-404-js-3c26557f63e5747eba47.js"
   },
   {
-    "url": "component---src-pages-404-js-71ec9f67a81bd3a26d25.js"
-  },
-  {
-    "url": "1-3803831542f161ef1ecd.js"
+    "url": "0-974fdc7dc95bb8753207.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -64,7 +61,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "b955d941ab47e17ec1278ad8be1b2d94"
+    "revision": "7cae60ce6bebd519be179f00935133f8"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -91,7 +88,7 @@ var navigationRoute = new workbox.routing.NavigationRoute(function (_ref) {
 
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      var offlineShell = "/mattortiz.github.io/offline-plugin-app-shell-fallback/index.html";
+      var offlineShell = "/offline-plugin-app-shell-fallback/index.html";
       var cacheName = workbox.core.cacheNames.precache;
       return caches.match(offlineShell, {
         cacheName: cacheName
@@ -148,7 +145,7 @@ var messageApi = {
           includesPrefix = _ref3.includesPrefix;
 
       if (!includesPrefix) {
-        return "/mattortiz.github.io" + pathname;
+        return "" + pathname;
       } else {
         return pathname;
       }
